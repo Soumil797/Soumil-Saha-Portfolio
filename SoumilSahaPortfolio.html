@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumil Saha | Personal Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Soumil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#leftSection">About</a></li>
+                    <li><a href="#secondSection">Projects</a></li>
+                    <li><a href="#thirdSection">Achievements</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="firstSection">
+            <div class="leftSection" id="leftSection">
+                Hi, My name is <span class="purple">Soumil</span>,
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" id="downloadBtn">Download Resume</button>
+                    <script>
+                        // Get the button element
+                        const downloadBtn = document.getElementById('downloadBtn');
+                
+                        // Replace 'your-pdf-file-url.pdf' with the actual URL of your PDF file
+                        const pdfUrl = 'Resume.pdf';
+                
+                        // Function to trigger the download when the button is clicked
+                        downloadBtn.addEventListener('click', () => {
+                            // Create a hidden anchor element
+                            const downloadLink = document.createElement('a');
+                            downloadLink.href = pdfUrl;
+                            downloadLink.download = 'Resume.pdf'; // Change the file name as desired
+                
+                            // Append the anchor to the body and click it to trigger the download
+                            document.body.appendChild(downloadLink);
+                            downloadLink.click();
+                
+                            // Remove the anchor from the body
+                            document.body.removeChild(downloadLink);
+                        });
+                    </script>
+                    <button onclick="window.location.href='https://github.com/Soumil797/'">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="">
+            </div>
+            <div class="main">
+        </section>
+        <section class="secondSection" id="secondSection">
+            <div class="main">
+                <h1>Projects</h1>
+                <div class="box">
+
+                </div>
+                <!--cards -->
+                <div class="card">
+
+                    <div class="image">
+                        <img src="AI.png">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Alexa(AI)</h1>
+                    </div>
+                    <div class="des">
+                        <p>An AI Assistant coded
+                            with Python
+                        </p>
+                        <button onclick="window.location.href='https://github.com/Soumil797/Alexa-AI-'">Click For Code</button>
+                    </div>
+                </div>
+                <!--cards -->
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="Calculator.png">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Calculator</h1>
+                    </div>
+                    <div class="des">
+                        <p>A Simple Tkinter GUI
+                            Calculator</p>
+                        </p>
+                        <button onclick="window.location.href='https://github.com/Soumil797/Calculator'">Click For Code</button>
+                    </div>
+                </div>
+                <!--cards -->
+
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="DiscordBot.png">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Discord Bot</h1>
+                    </div>
+                    <div class="des">
+                        <p>A Security/Fun/Engaging
+                            discord bot coded in
+                            python
+                        </p>
+                        <button onclick="window.location.href='https://github.com/Soumil797/DiscordBot'">Click For Code</button>
+                    </div>
+                </div>
+                <!--cards -->
+
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="Alarm.png">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Alarm</h1>
+                    </div>
+                    <div class="des">
+                        <p>A Simple Alarm coded
+                            in python</p>
+                        <button onclick="window.location.href='https://github.com/Soumil797/Alarm'">Click For Code</button>
+                    </div>
+                </div>
+                <!--cards -->
+
+        </section>
+        <section class="thirdSection" id="thirdSection">
+            <h1>Achievements</h1>
+            <div class="box">
+            </div>
+            <ul>
+                <li>
+                    <b>Professional Certified Python programmer </b>
+                    <ul>
+                        <li>
+                            December,2020 - Present.
+                        </li>
+                        <li>
+                            Write technical articles
+                            on programming related topics.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <hr>>
+                    <b>Certificate of A.I.</b>
+                    <ul>
+                        <li>
+                            August,2020 - Present.
+                        </li>
+                        <li>
+                            Conducted events and workshops on
+                            different technologies.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <hr>
+                    <b>Certificate of M.L.</b>
+                    <ul>
+                        <li>
+                            October,2020.
+                        </li>
+                        <li>
+                            Certificate of Cybersecurity
+                        </li>
+                        <hr>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+        <footer class="contactme" id="contactme">
+            <div class="footer">
+                <div class="first">
+                    <h3>Soumil's Developer Portfolio</h3>
+                    <h1>______________</h1>
+                    <h5>For Contact Purpose:</h5>
+                    <h5>soumilsahadpsv@gmail.com</h5>
+
+                </div>
+                <div class="second">
+                    <ul>
+                        <li><a href="#firstSection">Home</a></li>
+                        <li><a href="#leftSection">About</a></li>
+                        <li><a href="#secondSection">Projects</a></li>
+                        <li><a href="#thirdSection">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <ul>
+                        <li><a href="#firstSection">Home</a></li>
+                        <li><a href="#leftSection">About</a></li>
+                        <li><a href="#secondSection">Projects</a></li>
+                        <li><a href="#thirdSection">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="fourth">
+                    <ul>
+                        <li><a href="#firstSection">Home</a></li>
+                        <li><a href="#leftSection">About</a></li>
+                        <li><a href="#secondSection">Projects</a></li>
+                        <li><a href="#thirdSection">Achievements</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                ©Copyright 2023 by Soumil | All rights reserved.
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Programmer.', 'Web Developer.', 'AI Developer.'],
+                typeSpeed: 60,
+            });
+        </script>
+    </main>
+</body>
+
+</html>
